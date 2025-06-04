@@ -1,0 +1,398 @@
+[
+  {
+    "scene": "intro",
+    "timestamp": 0,
+    "global_frame_index": 0,
+    "frame_index_in_scene": 0,
+    "prompt": "of raw lumber. A single, smooth, dark wooden 2x4., detailed photorealistic woodgrain, stark black background, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "extreme close-up, detailed woodgrain texture, stark black background",
+    "description": "of raw lumber. A single, smooth, dark wooden 2x4."
+  },
+  {
+    "scene": "intro",
+    "timestamp": 2,
+    "global_frame_index": 1,
+    "frame_index_in_scene": 1,
+    "prompt": "of a wooden club, clearly identifiable as morphing from lumber, with a wicked, bent nail gleaming at one end., detailed photorealistic woodgrain, stark black background, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "extreme close-up, detailed woodgrain texture, stark black background",
+    "description": "of a wooden club, clearly identifiable as morphing from lumber, with a wicked, bent nail gleaming at one end."
+  },
+  {
+    "scene": "intro",
+    "timestamp": 4,
+    "global_frame_index": 2,
+    "frame_index_in_scene": 2,
+    "prompt": "of a wooden cross, intricately carved, morphing from a club., detailed photorealistic woodgrain, stark black background, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "extreme close-up, detailed woodgrain texture, stark black background",
+    "description": "of a wooden cross, intricately carved, morphing from a club."
+  },
+  {
+    "scene": "intro",
+    "timestamp": 6,
+    "global_frame_index": 3,
+    "frame_index_in_scene": 3,
+    "prompt": "of a raw construction beam, morphing from a cross., detailed photorealistic woodgrain, stark black background, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "extreme close-up, detailed woodgrain texture, stark black background",
+    "description": "of a raw construction beam, morphing from a cross."
+  },
+  {
+    "scene": "intro",
+    "timestamp": 8,
+    "global_frame_index": 4,
+    "frame_index_in_scene": 4,
+    "prompt": "of raw lumber with a bent nail gleaming wickedly, appearing to have transformed back from a construction beam., detailed photorealistic woodgrain, stark black background, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "extreme close-up, detailed woodgrain texture, stark black background",
+    "description": "of raw lumber with a bent nail gleaming wickedly, appearing to have transformed back from a construction beam."
+  },
+  {
+    "scene": "verse1",
+    "timestamp": 8,
+    "global_frame_index": 5,
+    "frame_index_in_scene": 0,
+    "prompt": "A dark street building itself around a fallen 2x4, buildings growing like plants, streetlights blooming like flowers, but with wrong geometry., sepia depression-era tint, geometric impossible architecture, dream logic, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "sepia filter overlay, depression-era tint, geometric impossible architecture",
+    "description": "A dark street building itself around a fallen 2x4, buildings growing like plants, streetlights blooming like flowers, but with wrong geometry."
+  },
+  {
+    "scene": "verse1",
+    "timestamp": 16,
+    "global_frame_index": 6,
+    "frame_index_in_scene": 1,
+    "prompt": "An average middle-aged man (Narrator) materializing from line art to full color on the street, his disproportionately large and menacing shadow stretches behind him. Focus on Narrator., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, sepia depression-era tint, geometric impossible architecture, dream logic, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "sepia filter overlay, depression-era tint, geometric impossible architecture",
+    "description": "An average middle-aged man (Narrator) materializing from line art to full color on the street, his disproportionately large and menacing shadow stretches behind him. Focus on Narrator."
+  },
+  {
+    "scene": "verse1",
+    "timestamp": 24,
+    "global_frame_index": 7,
+    "frame_index_in_scene": 2,
+    "prompt": "Saint Lucifer unfolding from the shadows between buildings like origami in reverse, his form constantly shifting between angelic and demonic, never quite settling. Focus on Saint Lucifer., tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, sepia depression-era tint, geometric impossible architecture, dream logic, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "sepia filter overlay, depression-era tint, geometric impossible architecture",
+    "description": "Saint Lucifer unfolding from the shadows between buildings like origami in reverse, his form constantly shifting between angelic and demonic, never quite settling. Focus on Saint Lucifer."
+  },
+  {
+    "scene": "verse1",
+    "timestamp": 32,
+    "global_frame_index": 8,
+    "frame_index_in_scene": 3,
+    "prompt": "Saint Lucifer extending his hand, a 2x4 floating towards the Narrator, candy-colored ribbons swirling menacingly around it, creating beautiful but menacing patterns., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, sepia depression-era tint, geometric impossible architecture, dream logic, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "sepia filter overlay, depression-era tint, geometric impossible architecture",
+    "description": "Saint Lucifer extending his hand, a 2x4 floating towards the Narrator, candy-colored ribbons swirling menacingly around it, creating beautiful but menacing patterns."
+  },
+  {
+    "scene": "verse1",
+    "timestamp": 40,
+    "global_frame_index": 9,
+    "frame_index_in_scene": 4,
+    "prompt": "Letters pouring from Saint Lucifer's mouth like water, flowing across the ground, rearranging into words and scrambling like insects before they can be read. Saint Lucifer walks away in the background. A deep sharp silence follows him, visualized as expanding circles of absolute black silence that consume all color and sound, pulsing and vibrating with overwhelming visual intensity., tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, sepia depression-era tint, geometric impossible architecture, dream logic, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "sepia filter overlay, depression-era tint, geometric impossible architecture",
+    "description": "Letters pouring from Saint Lucifer's mouth like water, flowing across the ground, rearranging into words and scrambling like insects before they can be read. Saint Lucifer walks away in the background. A deep sharp silence follows him, visualized as expanding circles of absolute black silence that consume all color and sound, pulsing and vibrating with overwhelming visual intensity."
+  },
+  {
+    "scene": "tag1",
+    "timestamp": 40,
+    "global_frame_index": 10,
+    "frame_index_in_scene": 0,
+    "prompt": "The Narrator reaching for the 2x4, his fingers just about to touch it, his shadow starting to grow more angular and aggressive., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "morphing transition, shadow transformation",
+    "description": "The Narrator reaching for the 2x4, his fingers just about to touch it, his shadow starting to grow more angular and aggressive."
+  },
+  {
+    "scene": "tag1",
+    "timestamp": 44,
+    "global_frame_index": 11,
+    "frame_index_in_scene": 1,
+    "prompt": "The Narrator's shadow visibly changing shape, growing larger and more angular and aggressive. The street itself shifting from Depression-era to a more modern industrial look., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "morphing transition, shadow transformation",
+    "description": "The Narrator's shadow visibly changing shape, growing larger and more angular and aggressive. The street itself shifting from Depression-era to a more modern industrial look."
+  },
+  {
+    "scene": "tag1",
+    "timestamp": 48,
+    "global_frame_index": 12,
+    "frame_index_in_scene": 2,
+    "prompt": "The street fully shifted to modern industrial. The Narrator's shadow is enormous and aggressive, clearly holding a weapon. The Narrator looks conflicted., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "morphing transition, shadow transformation",
+    "description": "The street fully shifted to modern industrial. The Narrator's shadow is enormous and aggressive, clearly holding a weapon. The Narrator looks conflicted."
+  },
+  {
+    "scene": "verse2",
+    "timestamp": 48,
+    "global_frame_index": 13,
+    "frame_index_in_scene": 0,
+    "prompt": "Narrator addressing floating text bubbles that represent 'you', they bob and weave around him like living things. His shadow, now clearly holding a weapon, contradicts his spoken words. Confessional style., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, split screen warm vs cold lighting, transparent figures fading, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "split screen visualization, warm vs cold lighting",
+    "description": "Narrator addressing floating text bubbles that represent 'you', they bob and weave around him like living things. His shadow, now clearly holding a weapon, contradicts his spoken words. Confessional style."
+  },
+  {
+    "scene": "verse2",
+    "timestamp": 56,
+    "global_frame_index": 14,
+    "frame_index_in_scene": 1,
+    "prompt": "All other figures on the street becoming transparent, fading in and out of existence. Only the 'you' text bubbles remain solid and vibrant around the Narrator., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, split screen warm vs cold lighting, transparent figures fading, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "split screen visualization, warm vs cold lighting",
+    "description": "All other figures on the street becoming transparent, fading in and out of existence. Only the 'you' text bubbles remain solid and vibrant around the Narrator."
+  },
+  {
+    "scene": "verse2",
+    "timestamp": 64,
+    "global_frame_index": 15,
+    "frame_index_in_scene": 2,
+    "prompt": "The screen literally splits down the middle. Left side shows the same street bathed in warm, soft light with rounded, organic shapes. Right side shows harsh geometric angles and cold blue-white light. The Narrator stands precisely on the dividing line, one foot in each world, being pulled apart., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, split screen warm vs cold lighting, transparent figures fading, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "split screen visualization, warm vs cold lighting",
+    "description": "The screen literally splits down the middle. Left side shows the same street bathed in warm, soft light with rounded, organic shapes. Right side shows harsh geometric angles and cold blue-white light. The Narrator stands precisely on the dividing line, one foot in each world, being pulled apart."
+  },
+  {
+    "scene": "verse2",
+    "timestamp": 72,
+    "global_frame_index": 16,
+    "frame_index_in_scene": 3,
+    "prompt": "The Narrator's struggle on the dividing line between the good and righteous plan, being pulled between two visually distinct worlds., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, split screen warm vs cold lighting, transparent figures fading, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "split screen visualization, warm vs cold lighting",
+    "description": "The Narrator's struggle on the dividing line between the good and righteous plan, being pulled between two visually distinct worlds."
+  },
+  {
+    "scene": "verse2",
+    "timestamp": 80,
+    "global_frame_index": 17,
+    "frame_index_in_scene": 4,
+    "prompt": "Close up on the Narrator, still straddling the divide, showing the internal conflict on his face, the split world visible behind him., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, split screen warm vs cold lighting, transparent figures fading, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "split screen visualization, warm vs cold lighting",
+    "description": "Close up on the Narrator, still straddling the divide, showing the internal conflict on his face, the split world visible behind him."
+  },
+  {
+    "scene": "tag2",
+    "timestamp": 80,
+    "global_frame_index": 18,
+    "frame_index_in_scene": 0,
+    "prompt": "The split screen healing and merging back into a single view of the street, but leaving a visible, faint scar down the middle of the environment., film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "healing split with visible scar",
+    "description": "The split screen healing and merging back into a single view of the street, but leaving a visible, faint scar down the middle of the environment."
+  },
+  {
+    "scene": "tag2",
+    "timestamp": 84,
+    "global_frame_index": 19,
+    "frame_index_in_scene": 1,
+    "prompt": "The street now appears whole, but with a noticeable linear scar running through all structures and ground., film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "healing split with visible scar",
+    "description": "The street now appears whole, but with a noticeable linear scar running through all structures and ground."
+  },
+  {
+    "scene": "tag2",
+    "timestamp": 88,
+    "global_frame_index": 20,
+    "frame_index_in_scene": 2,
+    "prompt": "Overhead shot of the scarred street, indicating the lasting division., film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "healing split with visible scar",
+    "description": "Overhead shot of the scarred street, indicating the lasting division."
+  },
+  {
+    "scene": "chorus1",
+    "timestamp": 88,
+    "global_frame_index": 21,
+    "frame_index_in_scene": 0,
+    "prompt": "Band members appearing as animated characters playing in a space that's simultaneously a basement club AND the street. Walls are transparent, instruments cast shadows on the pavement. Narrator looking determined., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, animated musicians in a basement club space, transparent walls casting shadows on pavement, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, full saturation explosive moments, theater crumbling metaphor, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "performance integration, theater metaphor, explosive moments",
+    "description": "Band members appearing as animated characters playing in a space that's simultaneously a basement club AND the street. Walls are transparent, instruments cast shadows on the pavement. Narrator looking determined."
+  },
+  {
+    "scene": "chorus1",
+    "timestamp": 96,
+    "global_frame_index": 22,
+    "frame_index_in_scene": 1,
+    "prompt": "The Narrator waving the 2x4 like a conductor's baton. With each gesture, pieces of Saint Lucifer begin to break away like puzzle pieces, floating toward the edges of the frame., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, full saturation explosive moments, theater crumbling metaphor, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "performance integration, theater metaphor, explosive moments",
+    "description": "The Narrator waving the 2x4 like a conductor's baton. With each gesture, pieces of Saint Lucifer begin to break away like puzzle pieces, floating toward the edges of the frame."
+  },
+  {
+    "scene": "chorus1",
+    "timestamp": 104,
+    "global_frame_index": 23,
+    "frame_index_in_scene": 2,
+    "prompt": "The street transforming into a crumbling theater. Saint Lucifer is on a stage that's visibly breaking apart. Red curtains try to close but they're tattered and won't meet in the middle., tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, full saturation explosive moments, theater crumbling metaphor, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "performance integration, theater metaphor, explosive moments",
+    "description": "The street transforming into a crumbling theater. Saint Lucifer is on a stage that's visibly breaking apart. Red curtains try to close but they're tattered and won't meet in the middle."
+  },
+  {
+    "scene": "chorus1",
+    "timestamp": 112,
+    "global_frame_index": 24,
+    "frame_index_in_scene": 3,
+    "prompt": "The Narrator's shadow has grown enormous, taking up most of the screen. It swings the shadow-2x4 with immense force, shattering the theater illusion., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, full saturation explosive moments, theater crumbling metaphor, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "performance integration, theater metaphor, explosive moments",
+    "description": "The Narrator's shadow has grown enormous, taking up most of the screen. It swings the shadow-2x4 with immense force, shattering the theater illusion."
+  },
+  {
+    "scene": "chorus1",
+    "timestamp": 116,
+    "global_frame_index": 25,
+    "frame_index_in_scene": 4,
+    "prompt": "Only the empty, scarred street remains after the illusion shatters. The Narrator's enormous shadow dominates the frame., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, full saturation explosive moments, theater crumbling metaphor, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "performance integration, theater metaphor, explosive moments",
+    "description": "Only the empty, scarred street remains after the illusion shatters. The Narrator's enormous shadow dominates the frame."
+  },
+  {
+    "scene": "tag3",
+    "timestamp": 116,
+    "global_frame_index": 26,
+    "frame_index_in_scene": 0,
+    "prompt": "The street fluid-like morphing into a lakeside road. Buildings melting and reforming as shoreline features., film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "fluid transformation, melting buildings",
+    "description": "The street fluid-like morphing into a lakeside road. Buildings melting and reforming as shoreline features."
+  },
+  {
+    "scene": "tag3",
+    "timestamp": 120,
+    "global_frame_index": 27,
+    "frame_index_in_scene": 1,
+    "prompt": "Mid-transformation, showing the fluidity of the urban landscape giving way to a natural shoreline, with hints of industrial elements still present., film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "fluid transformation, melting buildings",
+    "description": "Mid-transformation, showing the fluidity of the urban landscape giving way to a natural shoreline, with hints of industrial elements still present."
+  },
+  {
+    "scene": "tag3",
+    "timestamp": 124,
+    "global_frame_index": 28,
+    "frame_index_in_scene": 2,
+    "prompt": "A fully transformed lakeside road, shoreline features clearly visible. The reflection on the lake is not the sky, but the industrial cityscape from earlier verses., film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "fluid transformation, melting buildings",
+    "description": "A fully transformed lakeside road, shoreline features clearly visible. The reflection on the lake is not the sky, but the industrial cityscape from earlier verses."
+  },
+  {
+    "scene": "verse3",
+    "timestamp": 124,
+    "global_frame_index": 29,
+    "frame_index_in_scene": 0,
+    "prompt": "Now in a completely different animation style, more impressionistic, like moving watercolors. The lakeside road reflecting the industrial cityscape. Saint Lucifer sits on a bench, losing color saturation, becoming more like a pencil sketch., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, watercolor impressionism, color saturation loss, industrial lakeside, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "watercolor impressionism, color saturation loss, industrial lakeside",
+    "description": "Now in a completely different animation style, more impressionistic, like moving watercolors. The lakeside road reflecting the industrial cityscape. Saint Lucifer sits on a bench, losing color saturation, becoming more like a pencil sketch."
+  },
+  {
+    "scene": "verse3",
+    "timestamp": 132,
+    "global_frame_index": 30,
+    "frame_index_in_scene": 1,
+    "prompt": "The Narrator approaches Saint Lucifer, who is now very desaturated and ghost-like. Narrator is fully colored and solid, his shadow massive and dark, indicating role reversal., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, watercolor impressionism, color saturation loss, industrial lakeside, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "watercolor impressionism, color saturation loss, industrial lakeside",
+    "description": "The Narrator approaches Saint Lucifer, who is now very desaturated and ghost-like. Narrator is fully colored and solid, his shadow massive and dark, indicating role reversal."
+  },
+  {
+    "scene": "verse3",
+    "timestamp": 140,
+    "global_frame_index": 31,
+    "frame_index_in_scene": 2,
+    "prompt": "The Narrator's mouth opens and sheets of paper fly out like a blizzard. Each paper shows a different excuse/alibi, but they're all contradictory. The papers swirl around and dissolve., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, watercolor impressionism, color saturation loss, industrial lakeside, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "watercolor impressionism, color saturation loss, industrial lakeside",
+    "description": "The Narrator's mouth opens and sheets of paper fly out like a blizzard. Each paper shows a different excuse/alibi, but they're all contradictory. The papers swirl around and dissolve."
+  },
+  {
+    "scene": "verse3",
+    "timestamp": 148,
+    "global_frame_index": 32,
+    "frame_index_in_scene": 3,
+    "prompt": "A deep loud silence follows the Narrator, visualized as heavy, dark blue rain that falls upward from the ground to the sky. Each raindrop contains a tiny reflection of the Narrator's regretful face, watercolor impressionism., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, watercolor impressionism, color saturation loss, industrial lakeside, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "watercolor impressionism, color saturation loss, industrial lakeside",
+    "description": "A deep loud silence follows the Narrator, visualized as heavy, dark blue rain that falls upward from the ground to the sky. Each raindrop contains a tiny reflection of the Narrator's regretful face, watercolor impressionism."
+  },
+  {
+    "scene": "verse3",
+    "timestamp": 156,
+    "global_frame_index": 33,
+    "frame_index_in_scene": 4,
+    "prompt": "Narrator walks away, his massive shadow casting a long, dark path, leaving the desaturated Saint Lucifer behind on the bench., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, watercolor impressionism, color saturation loss, industrial lakeside, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "watercolor impressionism, color saturation loss, industrial lakeside",
+    "description": "Narrator walks away, his massive shadow casting a long, dark path, leaving the desaturated Saint Lucifer behind on the bench."
+  },
+  {
+    "scene": "chorus2",
+    "timestamp": 156,
+    "global_frame_index": 34,
+    "frame_index_in_scene": 0,
+    "prompt": "Multiple versions of both the Narrator and Saint Lucifer appearing, reflected and refracted across the screen like a broken mirror. Each reflection shows a different past moment from their encounters., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, kaleidoscope broken mirror effects, cosmic scale with street elements, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "kaleidoscope broken mirror effects, cosmic scale with street elements",
+    "description": "Multiple versions of both the Narrator and Saint Lucifer appearing, reflected and refracted across the screen like a broken mirror. Each reflection shows a different past moment from their encounters."
+  },
+  {
+    "scene": "chorus2",
+    "timestamp": 165,
+    "global_frame_index": 35,
+    "frame_index_in_scene": 1,
+    "prompt": "The characters become tiny figures in a vast cosmic space. Stars and planets move around them, but the celestial bodies are made of distinct street elements like lampposts, manhole covers, and brick walls., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, kaleidoscope broken mirror effects, cosmic scale with street elements, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "kaleidoscope broken mirror effects, cosmic scale with street elements",
+    "description": "The characters become tiny figures in a vast cosmic space. Stars and planets move around them, but the celestial bodies are made of distinct street elements like lampposts, manhole covers, and brick walls."
+  },
+  {
+    "scene": "chorus2",
+    "timestamp": 174,
+    "global_frame_index": 36,
+    "frame_index_in_scene": 2,
+    "prompt": "The cosmic space is filled with swirling street elements, the tiny figures of Narrator and Saint Lucifer moving towards each other for a final convergence., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, kaleidoscope broken mirror effects, cosmic scale with street elements, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "kaleidoscope broken mirror effects, cosmic scale with street elements",
+    "description": "The cosmic space is filled with swirling street elements, the tiny figures of Narrator and Saint Lucifer moving towards each other for a final convergence."
+  },
+  {
+    "scene": "chorus2",
+    "timestamp": 183,
+    "global_frame_index": 37,
+    "frame_index_in_scene": 3,
+    "prompt": "All the scattered reflections collapse back into two distinct figures: the Narrator and Saint Lucifer, facing each other directly., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, kaleidoscope broken mirror effects, cosmic scale with street elements, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "kaleidoscope broken mirror effects, cosmic scale with street elements",
+    "description": "All the scattered reflections collapse back into two distinct figures: the Narrator and Saint Lucifer, facing each other directly."
+  },
+  {
+    "scene": "chorus3",
+    "timestamp": 183,
+    "global_frame_index": 38,
+    "frame_index_in_scene": 0,
+    "prompt": "The Narrator and Saint Lucifer face each other. The 2x4 transforms one final time, into a glowing bridge connecting them, momentarily. Full saturation, explosive finale., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, maximum saturation, explosive finale, bridge formation, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "full saturation, explosive finale, bridge formation",
+    "description": "The Narrator and Saint Lucifer face each other. The 2x4 transforms one final time, into a glowing bridge connecting them, momentarily. Full saturation, explosive finale."
+  },
+  {
+    "scene": "chorus3",
+    "timestamp": 189,
+    "global_frame_index": 39,
+    "frame_index_in_scene": 1,
+    "prompt": "The 2x4 bridge crumbling into sawdust between the Narrator and Saint Lucifer. The sawdust drifts and dissipates., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, maximum saturation, explosive finale, bridge formation, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "full saturation, explosive finale, bridge formation",
+    "description": "The 2x4 bridge crumbling into sawdust between the Narrator and Saint Lucifer. The sawdust drifts and dissipates."
+  },
+  {
+    "scene": "chorus3",
+    "timestamp": 195,
+    "global_frame_index": 40,
+    "frame_index_in_scene": 2,
+    "prompt": "Narrator and Saint Lucifer stand looking at each other, the remnants of the sawdust bridge between them, indicating the end of their overt conflict. Full saturation, explosive finale., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, maximum saturation, explosive finale, bridge formation, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "full saturation, explosive finale, bridge formation",
+    "description": "Narrator and Saint Lucifer stand looking at each other, the remnants of the sawdust bridge between them, indicating the end of their overt conflict. Full saturation, explosive finale."
+  },
+  {
+    "scene": "outro",
+    "timestamp": 195,
+    "global_frame_index": 41,
+    "frame_index_in_scene": 0,
+    "prompt": "Both characters dissolving into line art, then further into musical notes that float away into a vast, empty space. The street beneath them begins to become a blank, white page. Minimalist style., middle-aged ordinary man, worn coat, average looking, nondescript clothes, expressionistic shadow that acts independently, tall gaunt figure, long dark coat, constantly shifting between angelic and demonic features, eyes catch light unnaturally, never settling on one form, line art dissolution, musical notes floating, blank page minimal, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "line art dissolution, musical notes floating, blank page minimal",
+    "description": "Both characters dissolving into line art, then further into musical notes that float away into a vast, empty space. The street beneath them begins to become a blank, white page. Minimalist style."
+  },
+  {
+    "scene": "outro",
+    "timestamp": 197,
+    "global_frame_index": 42,
+    "frame_index_in_scene": 1,
+    "prompt": "The street has become a blank page. Only a single piece of ordinary lumber remains on the page, no bent nail, no menace., line art dissolution, musical notes floating, blank page minimal, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "line art dissolution, musical notes floating, blank page minimal",
+    "description": "The street has become a blank page. Only a single piece of ordinary lumber remains on the page, no bent nail, no menace."
+  },
+  {
+    "scene": "outro",
+    "timestamp": 199,
+    "global_frame_index": 43,
+    "frame_index_in_scene": 2,
+    "prompt": "Extreme close-up on the single piece of ordinary lumber. The wood grain of the 2x4 subtly forms into the song title 'Saint Lucifer', then gently fades to black, leaving a blank screen., line art dissolution, musical notes floating, blank page minimal, film noir chiaroscuro lighting, wet pavement reflections, industrial urban decay, high quality, cinematic composition, dramatic lighting",
+    "style": "line art dissolution, musical notes floating, blank page minimal",
+    "description": "Extreme close-up on the single piece of ordinary lumber. The wood grain of the 2x4 subtly forms into the song title 'Saint Lucifer', then gently fades to black, leaving a blank screen."
+  }
+]
