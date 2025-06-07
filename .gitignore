@@ -170,3 +170,5 @@ image_sequence/
 .env
 dotenv.txt
 *.env
+.env
+*.env
