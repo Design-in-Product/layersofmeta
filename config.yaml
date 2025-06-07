@@ -1,0 +1,35 @@
+project:
+  name: "saint_lucifer"
+  song_duration: 199  # 3:19 in seconds
+  fps: 24
+  resolution: [1920, 1080]
+
+api_preferences:
+  primary: "stability"  # stability, midjourney, replicate
+  fallback: "replicate"
+  rate_limit_delay: 1  # seconds between requests
+  batch_size: 10
+
+style_settings:
+  base_quality: "high quality, cinematic composition, dramatic lighting"
+  negative_prompt: "blurry, low quality, distorted, ugly, bad anatomy"
+  
+scenes:
+  intro:
+    style_weight: 1.2
+    cfg_scale: 7
+    steps: 30
+  verse1:
+    style_weight: 1.0
+    cfg_scale: 8
+    steps: 35
+  chorus:
+    style_weight: 1.5
+    cfg_scale: 9
+    steps: 40
+
+output:
+  video_codec: "libx264"
+  audio_codec: "aac"
+  bitrate: "5M"
+  preset: "medium"
