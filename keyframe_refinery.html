@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Lucifer Keyframe Refinery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+            height: calc(100vh - 40px);
+        }
+
+        .main-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b35;
+        }
+
+        .nav-button {
+            background: #3a3a3a;
+            border: none;
+            color: #e0e0e0;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.2s;
+        }
+
+        .nav-button:hover {
+            background: #4a4a4a;
+        }
+
+        .nav-button:disabled {
+            background: #2a2a2a;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        .frame-info {
+            color: #ff6b35;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .frame-info.refined {
+            color: #90ee90;
+        }
+
+        .frame-info.refined::after {
+            content: " ✓";
+            font-size: 0.8em;
+        }
+
+        .scene-info {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .image-area {
+            flex: 1;
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+        }
+
+        .current-image {
+            max-width: 100%;
+            max-height: 60vh;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .image-placeholder {
+            color: #666;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .controls-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .section h3 {
+            color: #ff6b35;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .prompt-area {
+            width: 100%;
+            min-height: 120px;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 12px;
+            color: #e0e0e0;
+            font-family: inherit;
+            font-size: 0.9em;
+            resize: vertical;
+        }
+
+        .prompt-area:focus {
+            outline: none;
+            border-color: #ff6b35;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #e55a2b;
+        }
+
+        .btn-secondary {
+            background: #3a3a3a;
+            color: #e0e0e0;
+        }
+
+        .btn-secondary:hover {
+            background: #4a4a4a;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .versions {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .version-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            margin: 4px 0;
+            background: #3a3a3a;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .version-item:hover {
+            background: #4a4a4a;
+        }
+
+        .version-item.active {
+            background: #ff6b35;
+            color: white;
+        }
+
+        .version-time {
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        .version-item.active .version-time {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .notes-area {
+            width: 100%;
+            height: 80px;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 8px;
+            color: #e0e0e0;
+            font-family: inherit;
+            font-size: 0.85em;
+            resize: vertical;
+        }
+
+        .notes-area:focus {
+            outline: none;
+            border-color: #ff6b35;
+        }
+
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .status.success {
+            background: rgba(46, 160, 67, 0.2);
+            border: 1px solid rgba(46, 160, 67, 0.4);
+            color: #90ee90;
+        }
+
+        .status.error {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid rgba(231, 76, 60, 0.4);
+            color: #ff9999;
+        }
+
+        .status.loading {
+            background: rgba(255, 107, 53, 0.2);
+            border: 1px solid rgba(255, 107, 53, 0.4);
+            color: #ffcc99;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #ff6b35;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .export-info {
+            margin-top: 10px;
+            padding: 8px;
+            background: #3a3a3a;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #ccc;
+        }
+
+        .export-info.success {
+            background: rgba(46, 160, 67, 0.2);
+            border: 1px solid rgba(46, 160, 67, 0.4);
+            color: #90ee90;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-panel">
+            <div class="navigation">
+                <button class="nav-button" id="prevBtn" onclick="navigateFrame(-1)">← Prev</button>
+                <span class="frame-info" id="frameInfo">Frame 0000</span>
+                <button class="nav-button" id="nextBtn" onclick="navigateFrame(1)">Next →</button>
+                <span class="scene-info" id="sceneInfo">intro</span>
+                <input type="number" id="frameInput" min="0" max="43" value="0"
+                       style="background: #3a3a3a; border: 1px solid #555; color: #e0e0e0; padding: 4px 8px; border-radius: 4px; width: 70px; margin-left: auto;">
+                <button class="nav-button" onclick="goToFrame()">Go</button>
+            </div>
+
+            <div class="image-area">
+                <img id="currentImage" class="current-image hidden" alt="Current keyframe">
+                <div id="imagePlaceholder" class="image-placeholder">
+                    Select a frame to begin refinement
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-panel">
+            <div class="section">
+                <h3>Prompt Editor</h3>
+                <textarea id="promptText" class="prompt-area"
+                          placeholder="Enter your prompt here..."></textarea>
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="generateBtn" onclick="generateNewVersion()">
+                        Generate New
+                    </button>
+                    <button class="btn btn-secondary" onclick="revertPrompt()">
+                        Revert Prompt
+                    </button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Version History</h3>
+                <div class="versions" id="versionsList">
+                    <!-- Versions will be populated here -->
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="approveCurrentVersion()">
+                        ✓ Approve & Save
+                    </button>
+                    <button class="btn btn-secondary" onclick="deleteVersion()">
+                        Delete Version
+                    </button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Export</h3>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="exportRefinedShotList()">
+                        Export Refined Shot List
+                    </button>
+                    <button class="btn btn-secondary" onclick="showRefinedFrames()">
+                        Show Refined Frames
+                    </button>
+                </div>
+                <div id="exportStatus" class="export-info"></div>
+            </div>
+
+            <div class="section">
+                <h3>Notes</h3>
+                <textarea id="notesArea" class="notes-area"
+                          placeholder="Frame notes..."></textarea>
+                <button class="btn btn-secondary" onclick="saveNotes()" style="margin-top: 10px;">
+                    Save Notes
+                </button>
+            </div>
+
+            <div id="status" class="status hidden"></div>
+        </div>
+    </div>
+
+    <script>
+        // Frame data will be loaded from the server
+        let frameData = {};
+        let refinedPrompts = {}; // FIXED: Added this line
+
+        let currentFrame = 0;
+        let currentVersionId = 'original';
+        let versions = {}; // Will store versions for each frame
+        let notes = {}; // Will store notes for each frame
+        let framePrompts = {}; // Store prompts per frame
+
+        // Initialize the interface
+        async function init() {
+            // Load frame data from server
+            try {
+                const response = await fetch('/api/frames/list');
+                frameData = await response.json();
+                console.log('Loaded frame data:', Object.keys(frameData).length, 'frames');
+                
+                // FIXED: Load refined prompts
+                const refinedResponse = await fetch('/api/prompts/load');
+                refinedPrompts = await refinedResponse.json();
+                console.log('Loaded refined prompts:', Object.keys(refinedPrompts).length, 'refined');
+                
+            } catch (error) {
+                console.error('Failed to load frame data:', error);
+                // Fallback to hardcoded data if server fails
+                frameData = {
+                    0: { scene: 'intro', originalPrompt: 'of raw lumber. A single, smooth, dark wooden 2x4.' },
+                    1: { scene: 'intro', originalPrompt: 'of a wooden club, clearly identifiable as morphing from lumber, with a wicked, bent nail gleaming at one end.' },
+                    2: { scene: 'intro', originalPrompt: 'of a wooden cross, intricately carved, morphing from a club.' },
+                    3: { scene: 'intro', originalPrompt: 'of a raw construction beam, morphing from a cross.' },
+                    4: { scene: 'intro', originalPrompt: 'of raw lumber with a bent nail gleaming wickedly, appearing to have transformed back from a construction beam.' },
+                    5: { scene: 'verse1', originalPrompt: 'A dark street building itself around a fallen 2x4, buildings growing like plants, streetlights blooming like flowers, but with wrong geometry.' }
+                };
+            }
+            
+            loadFrame(0);
+            updateNavigation();
+        }
+
+        function navigateFrame(direction) {
+            const newFrame = currentFrame + direction;
+            if (newFrame >= 0 && newFrame <= 43) {
+                loadFrame(newFrame);
+            }
+        }
+
+        function goToFrame() {
+            const frameNum = parseInt(document.getElementById('frameInput').value);
+            if (frameNum >= 0 && frameNum <= 43) {
+                loadFrame(frameNum);
+            }
+        }
+
+        function loadFrame(frameNum) {
+            // Save current prompt before switching frames
+            if (currentFrame !== frameNum) {
+                const currentPrompt = document.getElementById('promptText').value;
+                framePrompts[currentFrame] = currentPrompt;
+            }
+            
+            currentFrame = frameNum;
+            currentVersionId = 'original'; // Reset to original when switching frames
+            
+            // Update UI
+            const frameInfoEl = document.getElementById('frameInfo');
+            frameInfoEl.textContent = `Frame ${frameNum.toString().padStart(4, '0')}`;
+            
+            // Add visual indicator if frame has been refined (check if refinedPrompts exists)
+            const refinedData = refinedPrompts && refinedPrompts[frameNum] ? refinedPrompts[frameNum] : null;
+            if (refinedData) {
+                frameInfoEl.className = 'frame-info refined';
+            } else {
+                frameInfoEl.className = 'frame-info';
+            }
+            
+            document.getElementById('frameInput').value = frameNum;
+            
+            // Load frame data
+            const data = frameData[frameNum];
+            
+            if (data) {
+                document.getElementById('sceneInfo').textContent = data.scene;
+                
+                // Use refined prompt if available, otherwise use original
+                let promptToUse = '';
+                if (refinedData && refinedData.refined_prompt) {
+                    promptToUse = refinedData.refined_prompt;
+                } else {
+                    const originalPrompt = data.original_prompt || data.originalPrompt || '';
+                    promptToUse = framePrompts[frameNum] || originalPrompt;
+                }
+                
+                document.getElementById('promptText').value = promptToUse;
+            } else {
+                // No data available for this frame
+                document.getElementById('sceneInfo').textContent = 'unknown';
+                document.getElementById('promptText').value = framePrompts[frameNum] || '';
+            }
+            
+            // Load current image
+            loadCurrentImage();
+            
+            // Load versions
+            loadVersions();
+            
+            // Load notes
+            loadNotes();
+            
+            updateNavigation();
+        }
+
+        function loadCurrentImage() {
+            // Try to load the current frame image
+            const imageUrl = `/api/frame/${currentFrame.toString().padStart(4, '0')}`;
+            const img = document.getElementById('currentImage');
+            const placeholder = document.getElementById('imagePlaceholder');
+            
+            img.onload = function() {
+                img.classList.remove('hidden');
+                placeholder.classList.add('hidden');
+            };
+            
+            img.onerror = function() {
+                img.classList.add('hidden');
+                placeholder.classList.remove('hidden');
+                placeholder.textContent = `Frame ${currentFrame.toString().padStart(4, '0')} - No image available`;
+            };
+            
+            img.src = imageUrl + '?t=' + Date.now(); // Cache busting
+        }
+
+        function updateNavigation() {
+            document.getElementById('prevBtn').disabled = currentFrame <= 0;
+            document.getElementById('nextBtn').disabled = currentFrame >= 43;
+        }
+
+        function generateNewVersion() {
+            const prompt = document.getElementById('promptText').value.trim();
+            if (!prompt) {
+                showStatus('Please enter a prompt', 'error');
+                return;
+            }
+
+            const generateBtn = document.getElementById('generateBtn');
+            generateBtn.disabled = true;
+            generateBtn.innerHTML = '<span class="loading-spinner"></span>Generating...';
+            
+            showStatus('Generating new version...', 'loading');
+
+            // Call your API to generate new image
+            fetch('/api/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    frame: currentFrame,
+                    prompt: prompt
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showStatus('Generation complete!', 'success');
+                    loadCurrentImage(); // Refresh the image
+                    addVersion(data.filename, prompt);
+                } else {
+                    showStatus('Generation failed: ' + data.error, 'error');
+                }
+            })
+            .catch(error => {
+                showStatus('Error: ' + error.message, 'error');
+            })
+            .finally(() => {
+                generateBtn.disabled = false;
+                generateBtn.innerHTML = 'Generate New';
+            });
+        }
+
+        function revertPrompt() {
+            const data = frameData[currentFrame];
+            if (data) {
+                const originalPrompt = data.original_prompt || data.originalPrompt || '';
+                document.getElementById('promptText').value = originalPrompt;
+            }
+        }
+
+        function addVersion(filename, prompt) {
+            if (!versions[currentFrame]) {
+                versions[currentFrame] = [];
+            }
+            
+            const timestamp = new Date().toLocaleTimeString();
+            versions[currentFrame].push({
+                filename: filename,
+                prompt: prompt,
+                timestamp: timestamp,
+                id: Date.now()
+            });
+            
+            loadVersions();
+        }
+
+        function loadVersions() {
+            const versionsList = document.getElementById('versionsList');
+            versionsList.innerHTML = '';
+            
+            // Add original version
+            const originalDiv = document.createElement('div');
+            originalDiv.className = 'version-item';
+            if (currentVersionId === 'original') {
+                originalDiv.className += ' active';
+            }
+            originalDiv.innerHTML = `
+                <span>Original</span>
+                <span class="version-time">Base</span>
+            `;
+            originalDiv.onclick = () => selectVersion('original');
+            versionsList.appendChild(originalDiv);
+            
+            // Add other versions
+            const frameVersions = versions[currentFrame] || [];
+            frameVersions.forEach((version, index) => {
+                const versionDiv = document.createElement('div');
+                versionDiv.className = 'version-item';
+                if (currentVersionId === version.id) {
+                    versionDiv.className += ' active';
+                }
+                versionDiv.innerHTML = `
+                    <span>v${index + 1}</span>
+                    <span class="version-time">${version.timestamp}</span>
+                `;
+                versionDiv.onclick = () => selectVersion(version.id);
+                versionsList.appendChild(versionDiv);
+            });
+        }
+
+        function selectVersion(versionId) {
+            currentVersionId = versionId;
+            
+            // Update UI to show selected version
+            document.querySelectorAll('.version-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.closest('.version-item').classList.add('active');
+            
+            // Update the image to show this version
+            if (versionId !== 'original') {
+                const frameVersions = versions[currentFrame] || [];
+                const version = frameVersions.find(v => v.id === versionId);
+                if (version) {
+                    // Load the specific version image
+                    const img = document.getElementById('currentImage');
+                    img.src = `/api/version/${version.filename}?t=` + Date.now();
+                    document.getElementById('promptText').value = version.prompt;
+                }
+            } else {
+                // Load original version - use a different endpoint that forces original
+                const img = document.getElementById('currentImage');
+                img.src = `/api/frame/original/${currentFrame.toString().padStart(4, '0')}?t=` + Date.now();
+                const data = frameData[currentFrame];
+                if (data) {
+                    const originalPrompt = data.original_prompt || data.originalPrompt || '';
+                    document.getElementById('promptText').value = framePrompts[currentFrame] || originalPrompt;
+                }
+            }
+        }
+
+        function saveCurrentVersion() {
+            // Implementation for saving current version permanently
+            showStatus('Version saved', 'success');
+        }
+
+        function approveCurrentVersion() {
+            const prompt = document.getElementById('promptText').value.trim();
+            if (!prompt) {
+                showStatus('Please enter a prompt to approve', 'error');
+                return;
+            }
+
+            // Get current version filename if we're viewing a generated version
+            let versionFilename = null;
+            if (currentVersionId !== 'original') {
+                const frameVersions = versions[currentFrame] || [];
+                const version = frameVersions.find(v => v.id === currentVersionId);
+                if (version) {
+                    versionFilename = version.filename;
+                }
+            }
+
+            // Save the refined prompt to server
+            fetch('/api/prompts/save', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    frame: currentFrame,
+                    prompt: prompt,
+                    version_filename: versionFilename
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Update local refined prompts
+                    refinedPrompts[currentFrame] = {
+                        refined_prompt: prompt,
+                        version_filename: versionFilename,
+                        approved: true
+                    };
+                    
+                    // Update UI to show this frame is refined
+                    const frameInfoEl = document.getElementById('frameInfo');
+                    frameInfoEl.className = 'frame-info refined';
+                    
+                    showStatus('✓ Prompt approved and saved!', 'success');
+                } else {
+                    showStatus('Failed to save: ' + data.error, 'error');
+                }
+            })
+            .catch(error => {
+                showStatus('Error saving: ' + error.message, 'error');
+            });
+        }
+
+        function exportRefinedShotList() {
+            fetch('/api/export/shot_list', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const exportInfo = document.getElementById('exportStatus');
+                    exportInfo.className = 'export-info success';
+                    exportInfo.innerHTML = `
+                        <strong>Export Complete!</strong><br>
+                        File: ${data.filename}<br>
+                        Updated ${data.updated_frames} frames
+                    `;
+                    showStatus('Shot list exported successfully!', 'success');
+                } else {
+                    showStatus('Export failed: ' + data.error, 'error');
+                }
+            })
+            .catch(error => {
+                showStatus('Export error: ' + error.message, 'error');
+            });
+        }
+
+        function showRefinedFrames() {
+            const refinedFrameNumbers = Object.keys(refinedPrompts);
+            if (refinedFrameNumbers.length === 0) {
+                showStatus('No refined frames yet', 'error');
+                return;
+            }
+            
+            const exportInfo = document.getElementById('exportStatus');
+            exportInfo.className = 'export-info';
+            exportInfo.innerHTML = `
+                <strong>Refined Frames (${refinedFrameNumbers.length}):</strong><br>
+                ${refinedFrameNumbers.sort((a, b) => parseInt(a) - parseInt(b)).join(', ')}
+            `;
+        }
+
+        function deleteVersion() {
+            if (currentVersionId !== 'original') {
+                const frameVersions = versions[currentFrame] || [];
+                versions[currentFrame] = frameVersions.filter(v => v.id !== currentVersionId);
+                loadVersions();
+                selectVersion('original');
+                showStatus('Version deleted', 'success');
+            }
+        }
+
+        function loadNotes() {
+            const frameNotes = notes[currentFrame] || '';
+            document.getElementById('notesArea').value = frameNotes;
+        }
+
+        function saveNotes() {
+            const noteText = document.getElementById('notesArea').value;
+            notes[currentFrame] = noteText;
+            showStatus('Notes saved', 'success');
+        }
+
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.classList.remove('hidden');
+            
+            setTimeout(() => {
+                status.classList.add('hidden');
+            }, 3000);
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', init);
+
+        // Smart keyboard shortcuts - only navigate when not in text input
+        document.addEventListener('keydown', function(e) {
+            // Check if focus is on a text input
+            const activeElement = document.activeElement;
+            const isInTextInput = activeElement.tagName === 'TEXTAREA' ||
+                                 (activeElement.tagName === 'INPUT' && activeElement.type === 'text') ||
+                                 (activeElement.tagName === 'INPUT' && activeElement.type === 'number');
+            
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        e.preventDefault();
+                        navigateFrame(-1);
+                        break;
+                    case 'ArrowRight':
+                        e.preventDefault();
+                        navigateFrame(1);
+                        break;
+                    case 'Enter':
+                        e.preventDefault();
+                        generateNewVersion();
+                        break;
+                }
+            } else if (!isInTextInput) {
+                // Only navigate when NOT in text input
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        e.preventDefault();
+                        navigateFrame(-1);
+                        break;
+                    case 'ArrowRight':
+                        e.preventDefault();
+                        navigateFrame(1);
+                        break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

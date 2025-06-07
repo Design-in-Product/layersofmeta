@@ -1,2 +1,28 @@
-# Ignore large keyframe zip file
-saint_lucifer_processed.zip
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables
+.env
+.env.local
+
+# Mac system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Generated content/media
+frames/
+keyframes/
+keyframe_versions/

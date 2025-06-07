@@ -1,0 +1,11 @@
+{
+  "name": "keyframe-refinery",
+  "version": "1.0.0",
+  "description": "AI Keyframe Refinement Tool",
+  "scripts": {
+    "start": "python gui_server.py"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
