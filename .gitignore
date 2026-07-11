@@ -153,6 +153,11 @@ ECCV2022-RIFE/
 oldRIFE/
 train_log/
 
+# Local media archive (4.8GB: audio masters, keyframes, nested venvs, and a
+# 2025 project snapshot). Kept on disk only — contains files over GitHub's
+# 100MB limit. Recovered backend code from here was committed 2026-07.
+videos/
+
 # ============================================
 # IDE AND EDITOR FILES
 # ============================================
