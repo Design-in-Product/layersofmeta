@@ -115,6 +115,10 @@ Thumbs.db
 *.flac
 *.aac
 
+# Exception: audio deliberately shared with the coworker agent (plain blobs)
+!music-video/*.mp3
+!music-video/*.wav
+
 # Image sequences/bulk images
 frames/
 keyframes/
