@@ -65,6 +65,7 @@ venv.bak/
 .venv/
 env.local
 venv_new/
+saint_lucifer_env/
 hades/
 
 # Jupyter Notebook
@@ -134,11 +135,16 @@ image_sequence/
 # ============================================
 # PROJECT-SPECIFIC ADDITIONS
 # ============================================
-# Add your specific patterns here
-# Example:
-# my_custom_config.json
-# temp_*
-# *_backup
+# Accidental pip-install artifacts (from `pip install >=x.y.z` redirecting to a file)
+=*
+
+# SSH keypairs that were committed by mistake (purged from history 2026-07)
+runpod
+runpod.pub
+*.pub
+
+# RunPod / infra credentials
+runpod/
 
 # ============================================
 # IDE AND EDITOR FILES
