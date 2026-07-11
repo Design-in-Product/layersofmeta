@@ -146,6 +146,13 @@ runpod.pub
 # RunPod / infra credentials
 runpod/
 
+# Archived RIFE frame-interpolation experiments (older attempt, kept locally for
+# reference but not tracked — includes 32MB model weights in train_log/)
+RIFE/
+ECCV2022-RIFE/
+oldRIFE/
+train_log/
+
 # ============================================
 # IDE AND EDITOR FILES
 # ============================================
