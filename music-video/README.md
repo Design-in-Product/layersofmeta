@@ -9,5 +9,14 @@ readable in a sandboxed environment.
 | `saint-lucifer.mp3` | Full song reference mix | 6.5 MB |
 | `saint-lucifer_vox-stem.wav` | Lead vocal stem (isolated vocals) | 24 MB |
 
-Additional stems (bass, piano, ukulele, group/backing vocals) and higher-res
-audio exist locally but are not committed — ask if you need them added.
+## Full stems
+
+The complete multitrack stem set (vox, bass, piano, ukulele takes, plus an
+instrumental/no-vocal karaoke bed) lives in a dedicated **private** repo to keep
+this code repo slim:
+
+**https://github.com/Design-in-Product/saint-lucifer-stems**
+
+That repo documents per-stem duration/sample-rate and sync notes for the planned
+remix / karaoke / play-along feature. The `vox.wav` here is the same lead-vocal
+stem, duplicated for quick reference.
