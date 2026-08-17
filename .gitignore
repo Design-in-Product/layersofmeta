@@ -115,7 +115,10 @@ Thumbs.db
 *.flac
 *.aac
 
-# Exception: audio deliberately shared with the coworker agent (plain blobs)
+# Exception: audio deliberately shared with the coworker agent (plain blobs).
+# NOTE: *.mp3/*.wav above are ignored globally, so any audio you actually want
+# tracked needs an explicit negation like these — otherwise `git add` silently
+# drops it and only the surrounding files commit.
 !music-video/*.mp3
 !music-video/*.wav
 
