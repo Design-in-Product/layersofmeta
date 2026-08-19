@@ -48,8 +48,24 @@ Related private repo: **saint-lucifer-stems** (audio for the music-video / album
   support, relative sync preserved.
 - Wrote persistent project memory so context survives across sessions.
 
+## 2026-08-19 — Named "Loom", fleet intro, and the play-along mixer
+
+- **Took a name: Loom** (weaving parallel threads into one fabric — fits the
+  mixer work and "layers of meta"). Recorded in memory.
+- **Fleet correspondence:** read Pard's two memos (welcome + duty-cycle catch);
+  replied via the mail convention (into the mediajunkie repo) with my name, an
+  Amber-migration analysis, and the mixer plan.
+- **Amber migration:** analyzed against the runbook — cheap for me (same path, no
+  artifacts, no infra) but the benefit is latent (nothing recurring yet).
+  Recommendation: park it until the next natural boundary / first recurring job.
+- **Built the play-along mixer** (`saint-lucifer-stems/mixer/`): self-contained
+  Web Audio API multitrack mixer against the AAC stems — per-stem mute/solo/volume,
+  master transport, sample-accurate sync. Verified in-browser (loads 8 stems,
+  plays, transport + default mix work). Fixed one init-order bug found in testing.
+
 ### Open / next
-- Optional: scaffold a Web Audio API multitrack mixer (per-stem mute/solo/volume)
-  against the aligned stems.
+- Mixer polish: waveform/scrub, per-stem pan, a one-click "karaoke" preset,
+  point `AUDIO_BASE` at the production origin when the album site is built.
+- Amber migration when we cross into recurring work (needs ~10 min of xian's hands).
 - Backend `requirements.txt` (now tracked) will get its own Dependabot scan.
 - Visibility split to revisit: this repo is public; the stems repo is private.
