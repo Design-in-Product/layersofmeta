@@ -63,7 +63,17 @@ Related private repo: **saint-lucifer-stems** (audio for the music-video / album
   master transport, sample-accurate sync. Verified in-browser (loads 8 stems,
   plays, transport + default mix work). Fixed one init-order bug found in testing.
 
+**Preview / sharing** (later same day)
+- Built a self-contained deploy bundle (`saint-lucifer-stems/dist/`, gitignored):
+  mixer + compressed AAC stems only (~21MB), no raw WAVs.
+- Local preview: `python3 -m http.server 8899` at the stems root → `/mixer/`.
+- Short-term shareable link: `cloudflared` quick tunnel to the bundle (installed
+  cloudflared via brew) — verified end-to-end. Ephemeral (dies with the session);
+  durable path TBD (Cloudflare Pages, since layersofmeta.com is on Cloudflare).
+
 ### Open / next
+- **Durable preview host:** deploy `dist/` to Cloudflare Pages (drag-drop or
+  `wrangler`); optionally map to `mixer.layersofmeta.com`. Replaces the throwaway tunnel.
 - Mixer polish: waveform/scrub, per-stem pan, a one-click "karaoke" preset,
   point `AUDIO_BASE` at the production origin when the album site is built.
 - Amber migration when we cross into recurring work (needs ~10 min of xian's hands).
