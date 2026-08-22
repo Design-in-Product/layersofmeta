@@ -71,7 +71,31 @@ Related private repo: **saint-lucifer-stems** (audio for the music-video / album
   cloudflared via brew) — verified end-to-end. Ephemeral (dies with the session);
   durable path TBD (Cloudflare Pages, since layersofmeta.com is on Cloudflare).
 
+**Session closed 2026-08-19.** Diagnosed missing instruments (guitar/organ/drums):
+the `St. Lucifer Stems/` folder is a partial bounce; other instruments were bounced
+separately at differing lengths (not drop-in aligned). Decision: full re-export
+from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
+
+## 2026-08-22 — Session: the .song mystery solved (it's Studio One, not Logic)
+
+- xian reports Logic Pro refuses to open `St lucifer.song`. Inspected the file
+  bytes: it's a **PreSonus Studio One 6.6.2 project** (zip w/ metainfo.xml;
+  Creator: Jeremy Goody, 2024-11-13, 22 tracks, 108 BPM, 44.1k/24-bit). Logic
+  can't ever open it — no drive hunt or Amber search needed; the complete
+  project folder (song + Media pool + History) is already local.
+- Extracted the full track list + mute states from `Song/song.xml`:
+  **20 active tracks**; muted (→ excluded per xian): old `piano`, and the
+  `jrb edit` reference mix track.
+- Alignment info xian worried about IS present (region positions in song.xml,
+  file mappings in mediapool.xml) — the project preserves everything.
+- Path forward: **Studio One** (free 30-day demo) on the laptop → open project →
+  Song ▸ Export Stems (dedicated feature) → `incoming/` → I verify + regenerate.
+  Alternative: ask Jeremy Goody to export stems from his session.
+
 ### Open / next
+- xian: install Studio One demo, test-export 1–2 stems first, then all 20.
+- Loom: verify alignment of incoming stems vs the 193.84s reference, regenerate
+  web set + mixer track list, redeploy preview.
 - **Durable preview host:** deploy `dist/` to Cloudflare Pages (drag-drop or
   `wrangler`); optionally map to `mixer.layersofmeta.com`. Replaces the throwaway tunnel.
 - Mixer polish: waveform/scrub, per-stem pan, a one-click "karaoke" preset,
