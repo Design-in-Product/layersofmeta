@@ -99,9 +99,13 @@ from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
   **Studio One 7** (installed on faoilean) — no demo needed. Plan: open local
   .song, relink to local Media once, Export Stems (test 2 first).
 
+- Staged working copy: `~/Music/St lucifer WORKING/` (1.7G, verified — archive
+  copy in videos/ stays pristine). Confirmed session host is faoilean (M1 Air).
+
 ### Open / next
-- xian: open the .song in Studio One 7 (work on a copy), relink, test-export
-  GUITAR + organ first, then all 20 active tracks.
+- xian (at faoilean's keyboard): open `~/Music/St lucifer WORKING/St lucifer.song`
+  in Studio One 7 → relink media to the copy's own Media/ folder → Export Stems:
+  test GUITAR + organ into `saint-lucifer-stems/incoming/`, then all 20 active.
 - Loom: verify alignment of incoming stems vs the 193.84s reference, regenerate
   web set + mixer track list, redeploy preview.
 - **Durable preview host:** deploy `dist/` to Cloudflare Pages (drag-drop or
