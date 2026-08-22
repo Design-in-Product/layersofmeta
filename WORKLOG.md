@@ -92,8 +92,16 @@ from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
   Song ▸ Export Stems (dedicated feature) → `incoming/` → I verify + regenerate.
   Alternative: ask Jeremy Goody to export stems from his session.
 
+- **Media completeness verified (same session):** the project references all 147
+  audio files by absolute path on the removable drive `Record Inside` (unmounted),
+  BUT the local `St lucifer/` folder contains **147/147** referenced files —
+  faithful copy, drive not needed. Amber confirmed uninvolved. xian already owns
+  **Studio One 7** (installed on faoilean) — no demo needed. Plan: open local
+  .song, relink to local Media once, Export Stems (test 2 first).
+
 ### Open / next
-- xian: install Studio One demo, test-export 1–2 stems first, then all 20.
+- xian: open the .song in Studio One 7 (work on a copy), relink, test-export
+  GUITAR + organ first, then all 20 active tracks.
 - Loom: verify alignment of incoming stems vs the 193.84s reference, regenerate
   web set + mixer track list, redeploy preview.
 - **Durable preview host:** deploy `dist/` to Cloudflare Pages (drag-drop or
