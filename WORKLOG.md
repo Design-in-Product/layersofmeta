@@ -76,6 +76,20 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-23 — Test export verified: pipeline proven end-to-end
+
+- xian ran the 2-stem test (GUITAR + organ) from Studio One 7. Missing-Devices
+  warning (Jeremy's plugins: Ozone/EQuilibrium/FETpressor/RX/Valhalla) — benign:
+  stems render without those inserts (rawer than final mix); echo/VERB FX
+  returns are dead without plugins → exclude from full export.
+- Files landed in `~/Music/St lucifer WORKING/Stems/` (~48 min each — the Song
+  End marker sits far right; trim before/during full export).
+- Verified with numbers: real audio (RMS ≈ −12 dB → auto-relink worked);
+  cross-correlation: GUITAR and organ both −7.800s vs reference → internally
+  consistent; new zero = old zero − 8.04s (uniform, trimmable).
+- Verdict: settings were right; full export is GO (after dragging Song End
+  marker to ~3:30). New set will replace the old 4-stem set entirely.
+
 ## 2026-08-22 — Session: the .song mystery solved (it's Studio One, not Logic)
 
 - xian reports Logic Pro refuses to open `St lucifer.song`. Inspected the file
