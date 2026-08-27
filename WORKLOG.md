@@ -76,6 +76,22 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-27 — Session: full-export prep (Song End marker guidance)
+
+- Session resumed (prior session closed 08-23 after test-export verification).
+- Test renders completed at full timeline length (8000s / 1.3GB each — Song End
+  marker sits at ~bar 3601). Measured true end-of-audio from them: guitar tail
+  ends 205.1s ≈ bar 93 → End marker target: bar 95–96. (Marker #14 at ~bar 91
+  would clip ~5s of guitar tail — don't use it as the export end.)
+- Clarified for xian: `Record Inside` = the volume name of Jeremy's external
+  drive (all 147 project media paths point at /Volumes/Record Inside/...).
+  Plan: xian mounts it; Loom scans for pre-existing polished stems.
+- Decision (xian): if no polished stems on the drive, pay Jeremy for an hour to
+  export them (~10× cheaper than buying his ~$1k plugin chain). Raw export
+  proceeds now regardless.
+- Noted for later: karaoke = its own view (not just a mixer row) with lyrics
+  piped in; parked until stem plumbing is done.
+
 ## 2026-08-23 — Test export verified: pipeline proven end-to-end
 
 - xian ran the 2-stem test (GUITAR + organ) from Studio One 7. Missing-Devices
