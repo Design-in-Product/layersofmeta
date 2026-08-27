@@ -76,6 +76,20 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-27 (cont. 3) — 🎉 FULL-BAND MIXER SHIPPED
+
+- Float re-export verified: all 11 files pcm_f32le; piano 2 peak +0.056dB
+  preserved (S1's clip warning cosmetic — actual overage was 0.10dB, not 10).
+  echo stem = dry send bleed at −49dB without its missing delay plugin → dropped.
+- Pipeline ran end-to-end: identical 7.5s trim + 199.0s length + −1.5dB pad on
+  every stem; groupvox 1+2 summed → backing-vox; 9 web stems @ exactly 199.00s
+  (vox, backing-vox, guitar, bass, piano, uke, organ, harpsichord, drums).
+- Mixer rebuilt for the 9-track full band (karaoke = mute vox; old bed and
+  2023 partial set retired from web/). Stems repo `48d7431`; README rewritten.
+- Redeployed via new quick tunnel; browser-verified: 9/9 stems load, playback
+  runs (0:13/3:19 observed). Raw float masters kept at
+  `~/Music/St lucifer WORKING/Stems/` (local only).
+
 ## 2026-08-27 (cont. 2) — Disabled-tracks discovery simplifies everything
 
 - LHK stems on the drive: also partial (8 files vs 23 project tracks).
