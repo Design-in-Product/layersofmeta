@@ -76,6 +76,20 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-27 (cont.) — LaCie drive scanned; first full export analyzed
+
+- Jeremy's LaCie drive attached + scanned: **no polished Lucifer stems** (its
+  `St. Lucifer Stems/` = the same 2023 partial 7-file set); drive `.song` is
+  byte-identical to ours (we're current). **Whole album's projects are on the
+  drive** (11 songs + two Mastering projects incl. "Layers Of Meta Layout V1"
+  and numbered album mixdowns) — source material for scaling the mixer later.
+  → xian will ask Jeremy for a polished-stems hour (esp. for karaoke vox).
+- Full export attempt #1: 10 stems @ 210.9s (End-marker fix worked). Peak
+  analysis: only `piano 2` clipped (0 dBFS — its missing compressor plugins);
+  all others healthy. Fix: re-export at 32-bit float + include the 5 skipped
+  takes (Uke×3/bass×2 — unmuted in project = they sound; Loom will
+  dedupe-check by correlation instead of assumptions).
+
 ## 2026-08-27 — Session: full-export prep (Song End marker guidance)
 
 - Session resumed (prior session closed 08-23 after test-export verification).
