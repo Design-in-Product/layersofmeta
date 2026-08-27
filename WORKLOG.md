@@ -76,6 +76,20 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-27 (cont. 2) — Disabled-tracks discovery simplifies everything
+
+- LHK stems on the drive: also partial (8 files vs 23 project tracks).
+- The "can't select uke/bass tracks" mystery solved by xian's screenshot: those
+  tracks are **disabled** in Studio One (grey, inert M/S), i.e., NOT in the
+  final mix — NEWUKE + St. Luciferbass replaced them. So the 10 exported stems
+  ARE the complete mix; the 5 skipped tracks should stay skipped. (Region-level
+  mutes — 15 events — also present; Export Stems respects both automatically.)
+- Remaining fix: single re-export of the same 10 at 32-bit float (piano 2 clip).
+- Backup findings for Pard: LaCie content NOT found on Amber (searched home +
+  /Volumes); Amber's TM destination = TARDIS on Uruk, 3 old backups exist, but
+  destination currently fails to mount → broken/stale. xian: needs nuanced
+  setup; fresh topic for Pard. LaCie = likely single copy of the whole album.
+
 ## 2026-08-27 (cont.) — LaCie drive scanned; first full export analyzed
 
 - Jeremy's LaCie drive attached + scanned: **no polished Lucifer stems** (its
