@@ -76,6 +76,13 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-27 (cont. 4) — Mixer restyled to match layersofmeta.com
+
+- Pulled the site's real tokens (cream #fff6ed, charcoal #2d3035, rust #b53508,
+  sky-blue field, Barlow/Barlow Condensed) and reskinned the mixer: editorial
+  hairline rows, condensed-caps track names, sky-blue transport, masthead link
+  to layersofmeta.com. Logic untouched; same preview URL; browser-verified.
+
 ## 2026-08-27 (cont. 3) — 🎉 FULL-BAND MIXER SHIPPED
 
 - Float re-export verified: all 11 files pcm_f32le; piano 2 peak +0.056dB
