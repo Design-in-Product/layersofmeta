@@ -76,6 +76,25 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-28 (cont.) — Phone verification, mobile fix, domain context, next song
+
+- xian verified cold-load on phone off-wifi ✓ (Pard's checklist item 3) — and
+  found a real bug: sliders unusable in portrait. Fixed (stacked track rows,
+  full-width sliders <680px) and redeployed to the same pages.dev URL.
+- **Domain architecture (xian):** band = Layers of Meta (layersofmeta.com);
+  album 1 = No One Does It Solo Only (QR → nodiso.site → currently redirects to
+  layersofmeta.com). Future: album 2 gets its own domain, nodiso.site becomes
+  album-1 site, layersofmeta.com becomes band site. Implication: the mixer is
+  ALBUM content → long-term home is nodiso.site-scoped, not play.layersofmeta.com.
+  Custom domain stays parked; pages.dev is the stable URL meanwhile.
+- **Site integration (xian's 3 options):** (1) link from /songs/saint-lucifer/,
+  (2) mixer subsection under /about-the-album/ with per-song remix pages,
+  (3) homepage feature. Plan: prototype with (1) — Lucifer was the single.
+- **Next song: All I Know** (aka "Stand up Mixer" project, aka finn's song) —
+  album order. 4.9G project copying from LaCie → ~/Music/Stand up Mixer WORKING.
+  Two .song files in project (regular + "_Shorter") — need xian to say which is
+  canonical when export time comes.
+
 ## 2026-08-28 — 🚀 PUBLIC SHIP + album backup push
 
 - Pard's GO received (xian's decision: album's been out a year, no gating).
