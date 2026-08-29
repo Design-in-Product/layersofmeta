@@ -76,6 +76,14 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-29 (cont.) — LaCie→Amber backup COMPLETE
+
+- Main push (73G) + delta pass done; final dry-run verify: **0 files pending**.
+  78G on Amber at ~/Backups/lacie-goody-2026-08/. Pard notified for arrival
+  check → Uruk TM pickup = album in three homes.
+- Note: xian's All I Know export also wrote to the LaCie copy mid-push (drive
+  is a live working surface, not frozen archive) — delta captured it.
+
 ## 2026-08-29 — 🎸 Song #2 shipped: All I Know
 
 - xian exported 21 stems (269.9s float). Decoded via console XML: 13 raw tracks
