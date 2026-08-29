@@ -76,6 +76,15 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-28 (cont. 2) — Nav hat shipped (approximate); All I Know export pending
+
+- Nav hat live on the mixer (Album/Band/Buy-the-CD, navy/yellow approximated
+  from screenshot). xian: "not styled the same but will do for the time being"
+  — a faithful pass (pull the theme's real CSS values) is queued as polish.
+- All I Know: working copy ready; canonical file confirmed =
+  `Stand up Mixer_Shorter.song` (extra chorus cut between bridge and v3).
+  xian doing the S1 export next; Loom pipeline standing by.
+
 ## 2026-08-28 (cont.) — Phone verification, mobile fix, domain context, next song
 
 - xian verified cold-load on phone off-wifi ✓ (Pard's checklist item 3) — and
