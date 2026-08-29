@@ -76,6 +76,22 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-29 — 🎸 Song #2 shipped: All I Know
+
+- xian exported 21 stems (269.9s float). Decoded via console XML: 13 raw tracks
+  + Jeremy's submix buses. **The buses ARE the consolidation** — used VOCAL/
+  BGV/GT/UKE/BASS/Perc/SOLO as the 7 faders + a Reverb fader (plate+room
+  summed). Excluded: MIXXX (full mix) and raw tracks (bus-covered).
+- Mix spans 8.2–263.0s; identical 7.7s trim → 8 stems @ 257.50s, 41MB.
+- Live at **https://saint-lucifer-mixer.pages.dev/all-i-know/** (Lucifer root
+  untouched); verified 200s + full-size audio. Repo `f8b37e8`.
+- Open review items for xian: what instrument is the SOLO bus (label the
+  fader properly)? Keep the Reverb fader? Any bus-consolidation changes by ear?
+- Structural note: two songs now share one Pages project — the option-2
+  landing page (song list) is the natural next structure, and the project
+  name "saint-lucifer-mixer" is outgrown (rename ~ nodiso-mixer when domain
+  decision lands).
+
 ## 2026-08-28 (cont. 2) — Nav hat shipped (approximate); All I Know export pending
 
 - Nav hat live on the mixer (Album/Band/Buy-the-CD, navy/yellow approximated
