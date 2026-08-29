@@ -76,6 +76,21 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-28 — 🚀 PUBLIC SHIP + album backup push
+
+- Pard's GO received (xian's decision: album's been out a year, no gating).
+- **Mixer deployed to Cloudflare Pages: https://saint-lucifer-mixer.pages.dev**
+  (project `saint-lucifer-mixer`, account xian@designinproduct.com). Verified:
+  page 200, stems fetch full-size, AUDIO_BASE correct. Throwaway tunnel retired.
+- Custom domain: xian flagged "one tricky thing about the domain name" (msg cut
+  off) — custom-domain attachment ON HOLD until he elaborates.
+- **LaCie→Amber push running** (74GB Goody folder; Amber verified by scutil
+  after DHCP reshuffle left hostname as UUID; ssh via id_ed25519_studio to
+  .119). Two rsync gotchas logged in memo to Pard (space-split remote path;
+  old rsync flags). On completion: verify counts, Pard checks arrival, Uruk TM
+  picks it up → album in three homes.
+- Next: link mixer from site nav; then next songs from the LaCie set.
+
 ## 2026-08-27 (cont. 4) — Mixer restyled to match layersofmeta.com
 
 - Pulled the site's real tokens (cream #fff6ed, charcoal #2d3035, rust #b53508,
