@@ -76,6 +76,23 @@ the `St. Lucifer Stems/` folder is a partial bounce; other instruments were boun
 separately at differing lengths (not drop-in aligned). Decision: full re-export
 from the DAW; drop folder staged at `saint-lucifer-stems/incoming/`.
 
+## 2026-08-29 (cont. 2) — Critical mixer bug found by xian's ears, fixed with forensics
+
+- xian: M inert, S sounded like mute-all, vocal volume stuck (All I Know page).
+- Reproduced in-browser reading actual gain nodes: applyGains used
+  setTargetAtTime anchored to ctx.currentTime — **automation never fires while
+  the AudioContext clock isn't running**. UI toggled; audio graph never changed.
+  Same latent flaw existed on the Lucifer page since day one (my original
+  verification checked playback/transport, never audibly exercised M/S — gap
+  between "renders and plays" and "controls actually control").
+- Fix: setGain() = direct assignment (valid in every ctx state) + 30ms linear
+  ramp only when ctx.state==="running"; applyGains nudges ctx.resume().
+  Deployed to both pages; verified numerically post-deploy: mute→0.000,
+  solo→others 0.000, slider→0.200. Repo d42fb85.
+- **Domain decision from xian: play.layersofmeta.com** (the pages.dev name
+  outgrown). Wrangler CLI has no Pages-domain support → dashboard attach
+  (xian, ~4 clicks); pages.dev URL keeps working regardless.
+
 ## 2026-08-29 (cont.) — LaCie→Amber backup COMPLETE
 
 - Main push (73G) + delta pass done; final dry-run verify: **0 files pending**.
